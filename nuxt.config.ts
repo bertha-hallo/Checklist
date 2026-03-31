@@ -17,13 +17,13 @@ export default defineNuxtConfig({
 
     runtimeConfig: {
       public: {
-        fbApiKey: " ",
-        fbAuthDomain:   " ",
-        fbProjectId:   " ",
-        fbstorageBucket:   " ",
-        fbMessagingSenderId:    " ",
-        fbAppId:    " ",
-        fbmeasurementId:    " ",
+        fbApiKey: "process.env.NUXT_PUBLIC_FIREBASE_API_KEY",
+        fbAuthDomain:   "process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID",
+        fbProjectId:   "process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID",
+        fbstorageBucket:   "process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET",
+        fbMessagingSenderId:    "process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID",
+        fbAppId:    "process.env.NUXT_PUBLIC_FIREBASE_APP_ID",
+        fbmeasurementId:    "process.env.NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID",
       }
     }
    
